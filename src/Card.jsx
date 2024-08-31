@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
-function Card() {
+function Card({ image, onClick }) {
   return (
-    <>
-      <h1>Card</h1>
-    </>
+    <div className="card" onClick={onClick}>
+      <img src={image} alt="Memory Card" />
+    </div>
   );
 }
 
